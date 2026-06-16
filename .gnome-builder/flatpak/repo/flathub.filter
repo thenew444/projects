@@ -1,0 +1,7 @@
+# backup copy of /home/thenew444/Projects/.gnome-builder/flatpak/filter, do not edit!
+deny *
+allow runtime/org.freedesktop.*
+allow runtime/org.gnome.*
+allow runtime/io.elementary.*
+allow runtime/org.kde.*
+allow app/*.BaseApp

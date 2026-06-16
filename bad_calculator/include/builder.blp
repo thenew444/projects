@@ -1,0 +1,289 @@
+using Gtk 4.0;
+
+Gtk.ApplicationWindow window 
+{
+  title: "bad_calculator";
+  default-width: 300;
+  default-height: 400;
+
+  titlebar: Gtk.HeaderBar 
+  {
+    show-title-buttons: true;
+    title-widget: Gtk.Label 
+    {
+      label: "bad_calculator";
+    };
+  };
+
+  Gtk.Grid grid 
+  {
+    row-spacing: 6;
+    column-spacing: 4;
+    margin-start: 10;
+    margin-end: 10;
+    margin-top: 10;
+    margin-bottom: 10;
+    hexpand: true;
+    vexpand: true;
+
+    Gtk.Label calc_display 
+    {
+      label: "0";
+      xalign: 1.0;
+      hexpand: true;
+      vexpand: true;
+
+      layout 
+      {
+        column: 0;
+        row: 0;
+        column-span: 4;
+      }
+
+      styles [
+        "calculator-screen",
+      ]
+    }
+
+    Gtk.Button clear 
+    {
+      label: "clr";
+      hexpand: true;
+      vexpand: true;
+      clicked => $button_clicked_cb();
+
+      layout 
+      {
+        column: 0;
+        row: 1;
+      }
+    }
+
+    Gtk.Button divide 
+    {
+      label: "/";
+      hexpand: true;
+      vexpand: true;
+      clicked => $button_clicked_cb();
+
+      layout 
+      {
+        column: 1;
+        row: 1;
+      }
+    }
+
+    Gtk.Button multiply 
+    {
+      label: "*";
+      hexpand: true;
+      vexpand: true;
+      clicked => $button_clicked_cb();
+
+      layout 
+      {
+        column: 2;
+        row: 1;
+      }
+    }
+
+    Gtk.Button minus 
+    {
+      label: "-";
+      hexpand: true;
+      vexpand: true;
+      clicked => $button_clicked_cb();
+
+      layout 
+      {
+        column: 3;
+        row: 1;
+      }
+    }
+
+    Gtk.Button seven 
+    {
+      label: "7";
+      hexpand: true;
+      vexpand: true;
+      clicked => $button_clicked_cb();
+
+      layout 
+      {
+        column: 0;
+        row: 2;
+      }
+    }
+
+    Gtk.Button eight 
+    {
+      label: "8";
+      hexpand: true;
+      vexpand: true;
+      clicked => $button_clicked_cb();
+
+      layout 
+      {
+        column: 1;
+        row: 2;
+      }
+    }
+
+    Gtk.Button nine 
+    {
+      label: "9";
+      hexpand: true;
+      vexpand: true;
+      clicked => $button_clicked_cb();
+
+      layout 
+      {
+        column: 2;
+        row: 2;
+      }
+    }
+
+    Gtk.Button add 
+    {
+      label: "+";
+      hexpand: true;
+      vexpand: true;
+      clicked => $button_clicked_cb();
+
+      layout 
+      {
+        column: 3;
+        row: 2;
+        row-span: 2;
+      }
+    }
+
+    Gtk.Button four 
+    {
+      label: "4";
+      hexpand: true;
+      vexpand: true;
+      clicked => $button_clicked_cb();
+
+      layout 
+      {
+        column: 0;
+        row: 3;
+      }
+    }
+
+    Gtk.Button five 
+    {
+      label: "5";
+      hexpand: true;
+      vexpand: true;
+      clicked => $button_clicked_cb();
+
+      layout 
+      {
+        column: 1;
+        row: 3;
+      }
+    }
+
+    Gtk.Button six 
+    {
+      label: "6";
+      hexpand: true;
+      vexpand: true;
+      clicked => $button_clicked_cb();
+
+      layout 
+      {
+        column: 2;
+        row: 3;
+      }
+    }
+
+    Gtk.Button one 
+    {
+      label: "1";
+      hexpand: true;
+      vexpand: true;
+      clicked => $button_clicked_cb();
+
+      layout 
+      {
+        column: 0;
+        row: 4;
+      }
+    }
+
+    Gtk.Button two 
+    {
+      label: "2";
+      hexpand: true;
+      vexpand: true;
+      clicked => $button_clicked_cb();
+
+      layout 
+      {
+        column: 1;
+        row: 4;
+      }
+    }
+
+    Gtk.Button three 
+    {
+      label: "3";
+      hexpand: true;
+      vexpand: true;
+      clicked => $button_clicked_cb();
+
+      layout 
+      {
+        column: 2;
+        row: 4;
+      }
+    }
+
+    Gtk.Button enter 
+    {
+      label: "=";
+      hexpand: true;
+      vexpand: true;
+      clicked => $button_clicked_cb();
+
+      layout 
+      {
+        column: 3;
+        row: 4;
+        row-span: 2;
+      }
+    }
+
+    Gtk.Button zero 
+    {
+      label: "0";
+      hexpand: true;
+      vexpand: true;
+      clicked => $button_clicked_cb();
+
+      layout 
+      {
+        column: 0;
+        row: 5;
+        column-span: 2;
+      }
+    }
+
+    Gtk.Button period 
+    {
+      label: ".";
+      hexpand: true;
+      vexpand: true;
+      clicked => $button_clicked_cb();
+
+      layout 
+      {
+        column: 2;
+        row: 5;
+      }
+    }
+  }
+}

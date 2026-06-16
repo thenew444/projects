@@ -1,0 +1,57 @@
+.calculator-screen {
+    /* Large legible typography */
+    font-size: 2.2em; 
+    font-family: monospace;
+    font-weight: bold;
+    color: #e2e8f0;
+
+    /* Padding proportional to the font scale */
+    padding: 0.4em 0.6em; 
+
+    /* Sleek inset digital background */
+    background-color: #0f172a; 
+    
+    /* Matte dark gray container framing outline */
+    border: 3px solid #334155; 
+    border-radius: 8px;
+
+    /* Spacing between the display frame and the button rows below it */
+    margin-bottom: 8px; 
+}
+
+/* Optional styling to make your buttons match the style */
+button {
+    font-size: 1.1em;
+    border-radius: 8px;
+    background-color: #1e293b;
+    color: #1e293b;
+    border: 1px solid #334155;
+}
+button:hover {
+    background-color: #0f172a;
+}
+
+/* Style the new title bar area */
+headerbar {
+    background-color: #0f172a; 
+    border-bottom: 1px solid #1e293b;
+    padding: 4px 4px;
+    color: #1e293b;
+}
+
+headerbar label {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+/* Style the minimize/maximize/close system vector icons inside the headerbar */
+headerbar windowcontrols button {
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+headerbar windowcontrols button:hover {
+    background-color: #334155; /* Subtle dark highlight overlay */
+}
