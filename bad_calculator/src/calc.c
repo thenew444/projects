@@ -68,11 +68,14 @@ activate (GtkApplication *app,
 
   g_object_set_data_full (G_OBJECT (window), "app-builder", builder, g_object_unref);
 
+/*
   GObject *calc_display = gtk_builder_get_object (builder, "calc_display");
   if (calc_display)
     {
       gtk_widget_add_css_class (GTK_WIDGET (calc_display), "calculator-screen");
     }
+*/
+
 
   gtk_widget_set_visible (GTK_WIDGET (window), TRUE);
 }
